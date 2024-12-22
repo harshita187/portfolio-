@@ -14,7 +14,7 @@ const Contact = () => {
         textAlign: "center",
         minHeight: "600px",
         display: "flex",
-        flexDirection: "column",
+        flexDirection: "column", // Change to column for layout
         alignItems: "center",
         justifyContent: "center",
         backgroundPosition: "center",
@@ -23,82 +23,93 @@ const Contact = () => {
         color: "white",
       }}
     >
-      <h2
+      <div
         style={{
-          fontSize: "2.5rem",
-          fontWeight: "bold",
-          marginBottom: "20px",
-          textTransform: "uppercase",
-          fontFamily: "Poppins, sans-serif",
+          display: "flex",
+          flexDirection: "column", // Change to column for text and icons
+          alignItems: "center",
+          justifyContent: "center",
+          textAlign: "center", 
         }}
       >
-       Reach me out
-      </h2>
-      <p style={{ fontSize: "1rem", marginBottom: "10px" }}>
-        Email:{" "}
-        <a
-          href="mailto:harshita129singh@gmail.com"
+        <h2
           style={{
-            color: "#FFD700",
-            textDecoration: "none",
+            fontSize: "2.5rem",
             fontWeight: "bold",
+            marginBottom: "20px",
+            textTransform: "uppercase",
+            fontFamily: "Poppins, sans-serif",
           }}
         >
-         <AiOutlineMail
-        size={80}
-          style={{
-            color: "#FFD700",
-            fontSize: "1.5rem",
-            marginBottom: "-3px",
-          }}
-        />{" "}
-        </a>
-      </p>
-      <p style={{ fontSize: "1.2rem", marginBottom: "10px" }}>
-        GitHub:{" "}
+          Reach Me Out
+        </h2>
         
-        <a
-          href="https://github.com/harshita187"
-          target="_blank"
-          rel="noopener noreferrer"
+        {/* Social icons container with row-wise layout */}
+        <div
           style={{
-            color: "#FFD700",
-            textDecoration: "none",
-            fontWeight: "bold",
+            display: "flex",
+            justifyContent: "center", // Align icons in row
+            gap: "20px", // Space between icons
+            marginTop: "20px",
           }}
         >
-          <DiGithub
-        size={80}
-          style={{
-            color: "#FFD700",
-            fontSize: "1.5rem",
-            marginBottom: "-3px",
-          }}
-        />{" "}
-        </a>
-      </p>
-      <p style={{ fontSize: "1.2rem", marginBottom: "10px" }}>
-        LinkedIn:{" "}
-        <a
-          href="https://www.linkedin.com/in/harshita-singh-430637255/"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{
-            color: "#FFD700",
-            textDecoration: "none",
-            fontWeight: "bold",
-          }}
-        >
-          <FaLinkedin
-        size={80}
-          style={{
-            color: "#FFD700",
-            fontSize: "1.5rem",
-            marginBottom: "-3px",
-          }}
-        />{" "}
-        </a>
-      </p>
+          <a
+            href="mailto:harshita129singh@gmail.com"
+            style={{
+              color: "#FFD700",
+              textDecoration: "none",
+              fontWeight: "bold",
+            }}
+          >
+            <AiOutlineMail
+              size={60}
+              style={{
+                color: "#FFD700",
+                fontSize: "1.5rem",
+                marginBottom: "-3px",
+              }}
+            />
+          </a>
+          <a
+            href="https://github.com/harshita187"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              color: "#FFD700",
+              textDecoration: "none",
+              fontWeight: "bold",
+            }}
+          >
+            <DiGithub
+              size={60}
+              style={{
+                color: "#FFD700",
+                fontSize: "1.5rem",
+                marginBottom: "-3px",
+              }}
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/harshita-singh-430637255/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              color: "#FFD700",
+              textDecoration: "none",
+              fontWeight: "bold",
+            }}
+          >
+            <FaLinkedin
+              size={60}
+              style={{
+                color: "#FFD700",
+                fontSize: "1.5rem",
+                marginBottom: "-3px",
+              }}
+            />
+          </a>
+        </div>
+      </div>
     </section>
   );
 };

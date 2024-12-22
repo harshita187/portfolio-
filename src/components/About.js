@@ -60,7 +60,7 @@ const About = () => {
               marginBottom: "20px",
             }}
           >
-            I'm Harshi, an aspiring Full-Stack Developer with a focus on UI/UX Design to offer the best possible experience for clients and users.
+            I'm Harshita, an aspiring Full-Stack Developer with a focus on UI/UX Design to offer the best possible experience for clients and users.
             Currently pursuing my Bachelor's degree at NIT Jaipur. I work with the following languages, web tools, and technologies:
           </p>
           <ul
