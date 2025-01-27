@@ -41,7 +41,7 @@ const Hero = () => {
           top: "60%",
           transform: "translateY(-50%)",
           textAlign: "center",
-          background: "rgba(0, 0, 0, 0.5)",
+          background: "rgba(0, 0, 0, 0.07)",
           padding: "20px",
           borderRadius: "10px",
         }}
